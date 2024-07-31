@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Cart from './components/Cart';
+import UseCon from './components/ContextProvider';
+import GetCon from './components/ContextConsumer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex bg-yellow-50 justify-center items-center h-screen">
+      <UseCon>
+     <Routes>
+     <Route path='/' element={<GetCon/>}/> 
+      <Route path='/cart' element={<Cart/>}/> 
+     </Routes>
+     </UseCon>
     </div>
   );
 }
