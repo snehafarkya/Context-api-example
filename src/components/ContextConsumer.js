@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 export default function GetCon({children}) {
    const { state, setState, image} = useContext(customContext);
   return (
-    <div className='flex flex-col gap-8'>
-      <h1 className='font-bold text-3xl '>Welcome to a learning lesson for CONTEXT API</h1>
+    <div className='flex flex-col justify-center items-center gap-8'>
+      <h1 className='font-bold text-3xl text-center'>Welcome to a learning lesson for <span className='underline underline-offset-2'>CONTEXT API</span></h1>
     <main className='flex justify-center items-center flex-col gap-2 '>
       <div className='card border-4  border-gray-800 rounded-lg shadow-2xl h-[300px] w-[300px]'>
         {image && <img src={image} alt='imageishere'/>}
