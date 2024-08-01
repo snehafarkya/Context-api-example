@@ -9,7 +9,7 @@ export default function Cart(props) {
   
    return(
    <div className='flex gap-4 flex-col items-start'>
-   <h1 className='font-bold text-xl '>{state ? `Your cart value is ${state}` :`Your cart is empty`}</h1>
+   <h1 className='font-bold text-xl '>{state ? `Your cart 🛒 value is ${state}:` :`Your cart is empty`}</h1>
    {state ? (
    <div className="flex gap-2 bg-slate-600 p-2 shadow-lg rounded-md max-w-[300px]">
    <div className='card border-4  border-yellow-50 rounded-lg shadow-2xl h-min w-fit'>
@@ -21,7 +21,7 @@ export default function Cart(props) {
 
       </div>
       ):null}
-      <Link to={'/'} className='underline font-semibold flex items-center gap-1'><BiArrowBack/>Go back</Link>
+      <Link to={'/'} className='hover:underline font-semibold flex items-center gap-1'><BiArrowBack/>Go back</Link>
    </div>
       
    )

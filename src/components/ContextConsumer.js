@@ -11,7 +11,7 @@ export default function GetCon({children}) {
    const { state, setState, image, wishlist, setWishlist} = useContext(customContext);
   return (
     <div className='flex flex-col justify-center items-center gap-8'>
-      <h1 className='font-bold text-3xl text-center'>Demonstrating <span className='underline underline-offset-2'>CONTEXT API</span></h1>
+      <h1 className='font-bold text-3xl text-center'>Demonstrating CONTEXT API</h1>
     <main className='flex justify-center items-center flex-col gap-2 '>
       <div className='card border-4 relative border-gray-800 rounded-lg shadow-2xl h-[300px] w-[300px]'>
         {image && <img src={image} alt='imageishere'/>}

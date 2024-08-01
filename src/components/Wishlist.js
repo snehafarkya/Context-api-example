@@ -10,7 +10,7 @@ export default function Wishlist(props) {
   
    return(
    <div className='flex gap-4 flex-col items-start'>
-   <h1 className='font-bold text-xl '>{wishlist ? `Your wishlist:` :`Oopss, you didn't made a wish till now:(`}</h1>
+   <h1 className='font-bold text-xl '>{wishlist ? `Your Wishlist✨` :`Oopss, you didn't made a wish till now:(`}</h1>
    {wishlist ? (
    <div className="flex gap-2 bg-slate-600 p-2 shadow-lg rounded-md max-w-[300px]">
    <div className='card border-4  border-yellow-50 rounded-lg shadow-2xl h-min w-fit'>
